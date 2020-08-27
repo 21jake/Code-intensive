@@ -53,3 +53,40 @@ component.loginPage = `
         </form>
     </div>
 `
+component.chatPage = `
+    <div class="chat-container">
+        <div class="header">
+            My Chat
+        </div>
+        <div class="main">
+            <div class="conversation-detail">
+                <div class="conversation-title">First conversation</div>
+                <div class="list-messages">
+                    <div class="message mine">
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur impedit quaerat quod molestias iste, at quo officiis quam possimus, ipsam eligendi explicabo. Beatae laborum eum cum ratione doloribus officia.</div>
+                    </div>
+                    <div class="message mine">
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur impedit quaerat quod molestias iste, at quo officiis quam possimus, ipsam eligendi explicabo. Beatae laborum eum cum ratione doloribus officia.</div>
+                    </div>
+                    <div class="message their">
+                        <div class="owner">abc@myspace.com</div>
+                        <div class="content">Hellow World</div>
+                    </div>
+                    <div class="message their">
+                        <div class="owner">abc@myspace.com</div>
+                        <div class="content">Hellow World</div>
+                    </div>
+
+                </div>
+                <form action="" id="send-message-form">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Type your message" name="message">
+                    </div>
+                    <button type="submit"> <i class="fab fa-telegram-plane"></i></button>
+                </form>
+
+
+            </div>
+        </div>
+    </div> 
+`

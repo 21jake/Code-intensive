@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #007cfd;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: sans-serif;
+}
+.conversation-title {
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    border-bottom: 2px solid #dfdfdf;
+    border-left: 2px solid #dfdfdf;
+    border-right: 2px solid #dfdfdf;
+}
+.chat-container {
+    height: 100vh;
+}
+.conversation-detail {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.list-messages {
+    flex-grow: 1;
+    padding: 10px;
+}
+.main {
+    height: calc(100vh - 64px);
+}
+#send-message-form {
+    position: relative;
+}
+#send-message-form button {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+.input-wrapper input {
+    padding: 20px 17px;
+    margin-bottom: 0 ;
+    font-size: 1rem;
+}
+
+.mine .content {
+    background-color: #006AFF;
+    /* text-align: right; */
+    color: #fff;
+
+}
+.message {
+    margin-bottom: 20px;
+}
+.content {
+    width: max-content;
+    padding: 4px 8px;
+    border-radius: 4px;  
+    font-size: 1.3rem;
+    font-family: monospace;
+    max-width: 50%;
+    
+}
+.list-messages .mine {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message.their .owner {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+.message.their .content {
+    background-color: #dfdfdf;
+    margin-top: 0.5%;
+}
+.fa-telegram-plane {
+    font-size: 280%;
+    color: #0088cc;
+}

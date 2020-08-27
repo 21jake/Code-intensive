@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="buoi2/css/style.css">
-    <link rel="stylesheet" href="buoi2/css/login.css">
+    <link rel="stylesheet" href="buoi2/css/chat.css">
+
+
 
 
 
 </head>
 
 <body>
-    <div class="login_container">
-        <form action="" id="login_form">
-            <div id="login_header">MindX Chat</div>
-            <div class="input-wrapper">
-                <input type="email" name="email" placeholder="Email">
-                <div class="error" id="email-error"></div>
+    <div class="chat-container">
+        <div class="header">
+            My Chat
+        </div>
+        <div class="main">
+            <div class="conversation-detail">
+                <div class="conversation-title">First conversation</div>
+                <div class="list-messages">
+                    <div class="message mine">
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur impedit quaerat quod molestias iste, at quo officiis quam possimus, ipsam eligendi explicabo. Beatae laborum eum cum ratione doloribus officia.</div>
+                    </div>
+                    <div class="message their">
+                        <div class="owner">abc@myspace.com</div>
+                        <div class="content">Hellow World</div>
+                    </div>
+
+                </div>
+                <form action="" id="send-message-form">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Type your message" name="message">
+                    </div>
+                    <button type="submit"> <i><i class="fab fa-telegram-plane"></i></i></button>
+                </form>
+
+                
+            
             </div>
-            <div class="input-wrapper">
-                <input type="password" name="password" placeholder="Password">
-                <div class="error" id="password-error"></div>
-            </div>
-    
-            <div class="form-action">
-                <div>Don't have an account?  <span class="cursor-pointer" type="submit">Register!</span></div>
-                <button type="submit" class="btn cursor-pointer">Login</button>
-            </div>
-        </form>
+        </div>
     </div>
 
 </body>
