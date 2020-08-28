@@ -40,17 +40,17 @@ view.setActiveScreen = (screenName) => {
             const sendMessageForm = document.getElementById('send-message-form');
             sendMessageForm.addEventListener('submit', (event) => {
                 event.preventDefault();
-                if (sendMessageForm.message.value != "") {
+                if (sendMessageForm.message.value != "" && sendMessageForm.message.value.trim().length) {
                     const message = {
                         content: sendMessageForm.message.value,
                         owner: model.currentUser.email
                     }
                     const messageFromBot = {
-                        content: sendMessageForm.message.value,
-                        owner: "Bot"
+                        content: sendMessageForm.message.value.split('').reverse().join(''),
+                        owner: "khuatvantho@hotmail.com"
                     }
-                    view.addMessage(message);
-                    view.addMessage(messageFromBot);
+                    controller.addMessageToFirebase(message, messageFromBot);
+                    view.addMessage(message, messageFromBot);
                 }
             })
             break;

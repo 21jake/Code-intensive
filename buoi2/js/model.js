@@ -10,8 +10,8 @@ model.register = async (data) => {
             displayName: data.firstName + ' ' + data.lastName,
         })
         firebase.auth().currentUser.sendEmailVerification();
+
     } catch (error) {
-        console.log(error.message);
         alert(error.message);
     }
 }
@@ -28,7 +28,7 @@ model.login = async ({email, password}) => {
         //     alert("Email isn't verified");
         // }
     } catch (error) {
-        console.log(error);
-        
+        alert (error);
+        console.log('aa');
     }
 }

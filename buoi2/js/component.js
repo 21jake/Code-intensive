@@ -65,15 +65,8 @@ component.chatPage = `
                     <div class="message mine">
                         <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur impedit quaerat quod molestias iste, at quo officiis quam possimus, ipsam eligendi explicabo. Beatae laborum eum cum ratione doloribus officia.</div>
                     </div>
-                    <div class="message mine">
-                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur impedit quaerat quod molestias iste, at quo officiis quam possimus, ipsam eligendi explicabo. Beatae laborum eum cum ratione doloribus officia.</div>
-                    </div>
                     <div class="message their">
-                        <div class="owner">abc@myspace.com</div>
-                        <div class="content">Hellow World</div>
-                    </div>
-                    <div class="message their">
-                        <div class="owner">abc@myspace.com</div>
+                        <div class="owner">khuatvantho@hotmail.com</div>
                         <div class="content">Hellow World</div>
                     </div>
 
@@ -82,7 +75,7 @@ component.chatPage = `
                     <div class="input-wrapper">
                         <input type="text" placeholder="Type your message" name="message">
                     </div>
-                    <button type="submit"> <i class="fab fa-telegram-plane"></i></button>
+                    <button type="submit"> <i class="fas fa-paw"></i></button>
                 </form>
 
 
