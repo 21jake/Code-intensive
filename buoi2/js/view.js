@@ -51,6 +51,7 @@ view.setActiveScreen = (screenName) => {
                     }
                     controller.addMessageToFirebase(message, messageFromBot);
                     view.addMessage(message, messageFromBot);
+                    model.listenConversationChange();
                 }
             })
             break;

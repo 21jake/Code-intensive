@@ -32,3 +32,12 @@ model.login = async ({email, password}) => {
         console.log('aa');
     }
 }
+model.listenConversationChange = () => {
+    firebase.firestore().collection('conversation')
+        .where('users', 'array-contains', model.currentUser.email)
+        .onSnapshot((event) => {
+            for(oneChange of event.docChanges()) {
+                console.log(getOneDocument(oneChange.doc));
+            }
+        });
+}

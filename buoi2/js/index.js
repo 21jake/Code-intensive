@@ -25,12 +25,12 @@ window.onload = () => {
           alert('Please verify your email');
           firebase.auth().signOut();
         }
+        controller.retrieveConvoFromFireBase();
     } else {
         view.setActiveScreen("registerPage");
     }
   })
   // templateFireStore();
-  controller.retrieveConvoFromFireBase();
   // console.log(firstConvoData);
 }
 

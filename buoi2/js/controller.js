@@ -14,9 +14,9 @@ controller.register = (data) => {
         view.setActiveScreen("loginPage");
     }
 }
-
 controller.addMessageToFirebase = async (message, messageFromBot) => {
     const firebase_convo_db = firebase.firestore().collection('conversation');
+
     const firstconvo_id = "Ebjhcvl5ffNTxl8r7C6d";
     let new_messages = {
         messages: firebase.firestore.FieldValue.arrayUnion(message, messageFromBot),
@@ -24,6 +24,10 @@ controller.addMessageToFirebase = async (message, messageFromBot) => {
     firebase_convo_db.doc(firstconvo_id).update(new_messages);
 }
 controller.retrieveConvoFromFireBase = async () => {
+    // const response = await firebase.firestore().collection('conversation').where('users','array-contains',model.currentUser.email).get();
+    // console.log(model.currentUser);
+    // console.log(response);
+
     const firebase_convo_db = firebase.firestore().collection('conversation');
     const convo_id = "Ebjhcvl5ffNTxl8r7C6d";
     let convo = await firebase_convo_db.doc(convo_id).get();
